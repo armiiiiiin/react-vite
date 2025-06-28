@@ -19,7 +19,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /home/${{ secrets.SERVER_USER }}/project-root
+            cd /home/${{ secrets.SERVER_USER }}/project-root/frontend
             git pull
             docker compose build frontend
             docker compose up -d frontend
