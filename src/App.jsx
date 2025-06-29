@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
-import SearchBar from './components/SearchBar';
 import JobList from './components/JobList';
+import JobDetails from './components/JobDetails';
+import './App.css';
 
 const App = () => {
-  const [search, setSearch] = useState('');
+  const [selectedJob, setSelectedJob] = useState(null);
 
   return (
-    <div>
+    <>
       <Header />
-      <SearchBar search={search} setSearch={setSearch} />
-      <JobList search={search} />
-    </div>
+      <div className="split-layout">
+        <JobList onSelect={setSelectedJob} />
+        <JobDetails job={selectedJob} />
+      </div>
+    </>
   );
 };
 

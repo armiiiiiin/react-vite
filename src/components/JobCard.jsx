@@ -1,9 +1,8 @@
-const JobCard = ({ job }) => (
-  <div style={{ border: '1px solid #ccc', margin: '1rem', padding: '1rem' }}>
-    <h2>{job.title}</h2>
+const JobCard = ({ job, onClick }) => (
+  <div className="job-card" onClick={onClick}>
+    <h4>{job.title}</h4>
     <p>{job.company}</p>
     <p>{job.location}</p>
-    <button>Apply Now</button>
   </div>
 );
 

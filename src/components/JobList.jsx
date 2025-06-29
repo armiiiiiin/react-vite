@@ -6,18 +6,12 @@ const jobs = [
   // Add more...
 ];
 
-const JobList = ({ search }) => {
-  const filtered = jobs.filter((job) =>
-    job.title.toLowerCase().includes(search.toLowerCase())
-  );
-
-  return (
-    <div>
-      {filtered.map((job) => (
-        <JobCard key={job.id} job={job} />
-      ))}
-    </div>
-  );
-};
+const JobList = ({ onSelect }) => (
+  <div className="list-panel">
+    {jobs.map((job) => (
+      <JobCard key={job.id} job={job} onClick={() => onSelect(job)} />
+    ))}
+  </div>
+);
 
 export default JobList;
