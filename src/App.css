@@ -1,28 +1,12 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f6f8fa;
+  color: #333;
+}
+
 .container {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 2rem;
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: auto;
-}
-
-input {
-  display: block;
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-  margin-top: 1rem;
-}
-
-.token {
-  background: #f3f4f6;
-  padding: 1rem;
-  word-break: break-all;
-  margin-top: 1rem;
 }
