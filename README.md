@@ -1,12 +1,22 @@
-# React + Vite
+# React 19 + Vite + Tailwind CSS v4 + ShadCN UI + + zustand React router v7 Starter Template！
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## How to use
 
-Currently, two official plugins are available:
+```
+git clone
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+npm install --legacy-peer-deps
+```
 
-## Expanding the ESLint configuration
+```
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##### version
+
+- 2025/05/07 Add react-i18next and demo(i18n.js)(toggleLanguage)
+- 2025/04/16 Add zustand and demo(store.js)
+- 2025/02/13 Add React router v7
+- 2025/02/13 release
